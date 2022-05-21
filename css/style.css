@@ -1,0 +1,190 @@
+/* utility */
+* {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+}
+
+body,
+html {
+ font-family: "Rubik", sans-serif;
+ font-size: 62.5%;
+ background-color: black;
+ color: white;
+}
+
+ul {
+ list-style-type: none;
+}
+
+img {
+ width: 100%;
+}
+
+a {
+ text-decoration: none;
+}
+
+.btn {
+ display: inline-block;
+ /* background-color: #fff; */
+ color: #333;
+ padding: 2rem 3.2rem;
+ font-size: 1.5rem;
+ font-weight: 600;
+ line-height: 1.6rem;
+ letter-spacing: 0.1rem;
+ border: none;
+ border-radius: 0.5rem;
+ margin-bottom: 2rem;
+ cursor: pointer;
+ text-transform: uppercase;
+}
+
+h3 {
+ font-size: 2.6rem;
+ font-weight: 300;
+ margin: 0.5rem 0;
+}
+
+h4 {
+ text-transform: uppercase;
+ font-size: 1.3rem;
+ color: #00ed82;
+}
+
+/* header */
+.head {
+ background-image: url("../img/header.jpg");
+ background-repeat: no-repeat;
+ background-size: cover;
+ height: 53rem;
+}
+
+/* navbar */
+.navbar {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.logo {
+ font-size: 2.5rem;
+ font-weight: 700;
+ letter-spacing: 0.1rem;
+ margin: 2rem 4rem;
+ color: #00ed82;
+}
+
+.btn-login {
+ cursor: pointer;
+ background-color: transparent;
+ border: none;
+ font-size: 1.4rem;
+ color: #eee;
+ text-transform: uppercase;
+ font-weight: 700;
+ margin: 2rem 4rem;
+ letter-spacing: 0.1rem;
+}
+
+/* header content */
+.header-content {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: flex-start;
+ margin-top: 5rem;
+}
+
+.main-logo {
+ width: 27rem;
+ margin: 2rem 0;
+}
+
+.header-text-1 {
+ font-size: 2.2rem;
+ font-weight: bold;
+}
+
+.header-text-2 {
+ font-size: 1.8rem;
+ margin: 2rem 0;
+}
+
+/* only header-btn hover  */
+.header-btn:hover {
+ opacity: 0.8;
+}
+
+.legal-text {
+ font-size: 1rem;
+ color: #ccc;
+}
+
+/* sub section */
+.sub-heading {
+ display: grid;
+ grid-template-columns: 2fr 4fr 2fr;
+ gap: 4rem;
+ /* align-items: center; */
+ background: linear-gradient(
+  318.68deg,
+  #0f495c 0%,
+  #0d3640 49.72%,
+  #08141f 100%
+ );
+ padding: 3rem 4rem;
+}
+
+.sub-link {
+ display: block;
+ font-size: 1.2rem;
+ color: #ccc;
+ text-decoration: underline;
+ margin-top: 0.5rem;
+}
+
+.sub-btn {
+ background-color: none;
+ border: 2px solid #fff;
+ color: #fff;
+ border-radius: 0.5rem;
+ margin: 0;
+}
+
+.sub-btn:hover {
+ color: #fff;
+ border-color: #ccc;
+}
+
+/* last get bundel button select using pseudo selector */
+.sub-heading > div:last-of-type {
+ justify-self: end;
+ align-self: flex-end;
+}
+
+/* below bundel button link*/
+.sub-heading > div:last-of-type .sub-link {
+ text-align: center;
+}
+
+/* media query */
+@media only screen and (max-width: 768px) {
+ /* main logo */
+ .main-logo {
+  width: 20rem;
+ }
+ /* header content */
+ .header-content {
+  padding: 0 2rem;
+  text-align: center;
+ }
+
+ .logo,
+ .btn-login {
+  margin: 1.8rem 3rem;
+ }
+
+ /* sub-heading */
+}
